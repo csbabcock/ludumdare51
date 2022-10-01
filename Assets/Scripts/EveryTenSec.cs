@@ -25,6 +25,7 @@ public class EveryTenSec : MonoBehaviour
     {
         while (playerAlive)
         {
+            Debug.Log(Time.time);
             yield return new WaitForSeconds(countTime);
             RandomEvent();
         }
