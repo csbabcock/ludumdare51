@@ -1424,6 +1424,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   randomValue: 0
+  playerAlive: 1
+  followPlayer: {fileID: 1799056996}
 --- !u!4 &1515396632
 Transform:
   m_ObjectHideFlags: 0
@@ -1817,6 +1819,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1098804146}
+  everyTenSec: {fileID: 1515396631}
 --- !u!195 &1799056997
 NavMeshAgent:
   m_ObjectHideFlags: 0

@@ -6,12 +6,10 @@ using Random = UnityEngine.Random;
 
 public class EveryTenSec : MonoBehaviour
 {
-    public int randomValue;
+    public int randomValue = 0;
     public bool playerAlive = true;
 
-    void Awake()
-    {
-    }
+    public FollowPlayer followPlayer;
 
     void Start()
     {
@@ -27,8 +25,6 @@ public class EveryTenSec : MonoBehaviour
     {
         while (playerAlive)
         {
-            Debug.Log(Time.time);
-            randomValue = Random.Range(1, 4);
             yield return new WaitForSeconds(countTime);
             RandomEvent();
         }
@@ -36,10 +32,13 @@ public class EveryTenSec : MonoBehaviour
     
     void RandomEvent()
     {
+        randomValue = Random.Range(1, 4);
+
         switch (randomValue)
         {
             case 1:
                 Debug.Log("Enemy is moving closer");
+                followPlayer.Follow();
                 break;
             case 2:
                 Debug.Log("Object Broke");

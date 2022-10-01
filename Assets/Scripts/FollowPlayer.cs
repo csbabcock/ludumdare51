@@ -6,17 +6,20 @@ using UnityEngine.AI;
 public class FollowPlayer : MonoBehaviour
 {
     public Transform target;
+    NavMeshAgent nav;
 
-    private NavMeshAgent nav;
+    public EveryTenSec everyTenSec;
+
     // Start is called before the first frame update
     void Start()
     {
         nav = GetComponent<NavMeshAgent>();
     }
-
-    // Update is called once per frame
-    void Update()
+    public void Follow()
     {
-        nav.SetDestination(target.position);
+        if (everyTenSec.randomValue == 1)
+        {
+            nav.SetDestination(target.position);
+        }
     }
 }
