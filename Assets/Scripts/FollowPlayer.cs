@@ -8,7 +8,7 @@ public class FollowPlayer : MonoBehaviour
     public Transform target;
     NavMeshAgent nav;
 
-    public EveryTenSec everyTenSec;
+    public EveryTenSeconds everyTenSeconds;
 
     // Start is called before the first frame update
     void Start()
@@ -17,7 +17,7 @@ public class FollowPlayer : MonoBehaviour
     }
     public void Follow()
     {
-        if (everyTenSec.randomValue == 1)
+        if (everyTenSeconds.randomValue == 1)
         {
             nav.SetDestination(target.position);
         }

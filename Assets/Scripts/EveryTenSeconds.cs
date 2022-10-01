@@ -4,25 +4,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random=UnityEngine.Random;
 
-public class EveryTenSec : MonoBehaviour
+public class EveryTenSeconds : MonoBehaviour
 {
     public int randomValue = 0;
     public bool playerAlive = true;
 
     public FollowPlayer followPlayer;
     public MoveObject moveObject;
+    public ChangeObject changeObject;
 
     void Start()
     {
-        StartCoroutine(TenSecTimer());
+        StartCoroutine(TenSecondTimer());
     }
 
     void OnDisable()
     {
-        StopCoroutine(TenSecTimer());
+        StopCoroutine(TenSecondTimer());
     }
 
-    IEnumerator TenSecTimer(float countTime = 10f)
+    IEnumerator TenSecondTimer(float countTime = 10f)
     {
         while (playerAlive)
         {
@@ -48,6 +49,7 @@ public class EveryTenSec : MonoBehaviour
                 break;
             case 3:
                 Debug.Log("Somethings changed");
+                changeObject.ChangePosition();
                 break;
             case 4:
                 Debug.Log("I heard something");
