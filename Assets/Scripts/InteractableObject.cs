@@ -13,8 +13,6 @@ public class InteractableObject : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            Debug.Log("PRESSED E");
-
             Pressed();
         }
     }
@@ -32,8 +30,6 @@ public class InteractableObject : MonoBehaviour
             // if raycast hits, then it checks if it hit an object with the tag Interactable.
             if (hit.transform.tag == "Interactable")
             {
-                Debug.Log("FOUND INTERACTABLE");
-
                 //This line will get the Animator from  Parent that was hit by the raycast.
                 anim = hit.transform.GetComponentInParent<Animator>();
 
