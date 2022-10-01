@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Random = UnityEngine.Random;
+using Random=UnityEngine.Random;
 
 public class EveryTenSec : MonoBehaviour
 {
@@ -10,6 +10,7 @@ public class EveryTenSec : MonoBehaviour
     public bool playerAlive = true;
 
     public FollowPlayer followPlayer;
+    public MoveObject moveObject;
 
     void Start()
     {
@@ -43,6 +44,7 @@ public class EveryTenSec : MonoBehaviour
                 break;
             case 2:
                 Debug.Log("Object Broke");
+                moveObject.moveObject = true;
                 break;
             case 3:
                 Debug.Log("Somethings changed");
