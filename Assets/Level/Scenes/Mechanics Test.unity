@@ -2516,7 +2516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1098804146}
-  everyTenSeconds: {fileID: 0}
+  everyTenSeconds: {fileID: 1515396631}
 --- !u!195 &1799056997
 NavMeshAgent:
   m_ObjectHideFlags: 0
