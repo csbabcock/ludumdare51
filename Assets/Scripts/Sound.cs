@@ -15,6 +15,12 @@ public class Sound
     [Range(0.1f, 3.0f)]
     public float pitch;
 
+    [Range(0f, 1f)] 
+    public float spatialBlend;
+
+    public float minDistance;
+    public float maxDistance;
+
     [HideInInspector]
     public AudioSource source;
 

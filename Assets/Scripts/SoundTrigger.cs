@@ -5,12 +5,13 @@ using UnityEngine;
 
 public class SoundTrigger : MonoBehaviour
 {
+    public AudioManager audioManager;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-            Debug.Log("ENTERED TRIGGER");
-            FindObjectOfType<AudioManager>().Play("ScarySound");
+            audioManager.Play("Distortion");
         }
     }
 }
