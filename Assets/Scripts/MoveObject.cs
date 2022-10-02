@@ -10,17 +10,17 @@ public class MoveObject : MonoBehaviour
     [SerializeField] Rigidbody[] rb;
     public bool moveObject;
 
-    [SerializeField] float randomX = 0;
-    [SerializeField] float randomY = 0;
-    [SerializeField] float randomZ = 0;
+    float randomX = 0;
+    float randomY = 0;
+    float randomZ = 0;
 
     void Update()
     {
         if (moveObject)
         {
-            randomX = Random.Range(0.1f, 1f);
-            randomY = Random.Range(0.1f, 1f);
-            randomZ = Random.Range(0.1f, 1f);
+            randomX = Random.Range(1f, 3f);
+            randomY = Random.Range(1f, 3f);
+            randomZ = Random.Range(1f, 3f);
 
             rb[Random.Range(0,3)].AddForce(randomX,randomY,randomZ, ForceMode.Impulse);
             

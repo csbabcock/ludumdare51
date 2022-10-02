@@ -47,22 +47,22 @@ public class EveryTenSeconds : MonoBehaviour
         switch (randomValue)
         {
             case 1:
-                Debug.Log("Enemy is moving closer");
+                Debug.Log("It's moving closer...");
                 followPlayer.Follow();
                 tempValue = randomValue;
                 break;
             case 2:
-                Debug.Log("Object Broke");
+                Debug.Log("Something moved...");
                 moveObject.moveObject = true;
                 tempValue = randomValue;
                 break;
             case 3:
-                Debug.Log("Somethings changed");
+                Debug.Log("Somethings changed...");
                 changeObject.ChangePosition();
                 tempValue = randomValue;
                 break;
             case 4:
-                Debug.Log("I heard something");
+                Debug.Log("I heard something...");
                 playSound.SoundFX();
                 tempValue = randomValue;
                 break;
