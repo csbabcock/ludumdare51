@@ -2897,7 +2897,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1829425631}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
@@ -3062,8 +3062,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   light: {fileID: 1829425633}
   lightSound: {fileID: 1829425634}
-  minTime: 1
-  maxTime: 5
+  minTime: 0.1
+  maxTime: 3
   flickerTimer: 0
 --- !u!1 &1831896115
 GameObject:
