@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,6 +16,12 @@ public class FollowPlayer : MonoBehaviour
     {
         nav = GetComponent<NavMeshAgent>();
     }
+
+    private void Update()
+    {
+        Follow();
+    }
+
     public void Follow()
     {
         if (everyTenSeconds.randomValue == 1)

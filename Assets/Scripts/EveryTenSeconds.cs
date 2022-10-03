@@ -48,7 +48,6 @@ public class EveryTenSeconds : MonoBehaviour
         {
             case 1:
                 Debug.Log("It's moving closer...");
-                followPlayer.Follow();
                 tempValue = randomValue;
                 break;
             case 2:
