@@ -8,8 +8,13 @@ public class PlaySound : MonoBehaviour
     public AudioSource source;
     public AudioClip clip;
 
+    public Interact interact;
+
     public void SoundFX()
     {
-        source.PlayOneShot(clip);
+        if (!interact.isOpen)
+        {
+            source.PlayOneShot(clip);
+        }
     }
 }

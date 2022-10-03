@@ -751,7 +751,7 @@ GameObject:
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
+  m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &807257034
@@ -1234,7 +1234,7 @@ GameObject:
   m_Name: Sphere (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
+  m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1003731001
@@ -1568,6 +1568,7 @@ MonoBehaviour:
   MaxDistance: 10
   anim: {fileID: 0}
   text: {fileID: 1995678811}
+  isOpen: 0
 --- !u!4 &1098804146 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7529181626207423782, guid: f80d538e0a9833d498612ecd7cf3eee3, type: 3}
@@ -1678,7 +1679,7 @@ GameObject:
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
+  m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1129168044
@@ -1810,7 +1811,7 @@ GameObject:
   m_Name: Cube
   m_TagString: Interactable
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
+  m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1221652579
@@ -2264,6 +2265,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source: {fileID: 1639576886}
   clip: {fileID: 8300000, guid: 0661c8de83fec4e42a57479e7c8354ab, type: 3}
+  interact: {fileID: 1098804143}
 --- !u!4 &1604180061
 Transform:
   m_ObjectHideFlags: 0
@@ -2851,7 +2853,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1799056995}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.041832447, y: 1.72, z: -44.42}
+  m_LocalPosition: {x: 0.041832447, y: 5.9, z: -44.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2869,7 +2871,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -3078,7 +3080,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bc7bc14c6986724ab8a74eae9c7bf44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light: {fileID: 1829425633}
+  lightType: {fileID: 1829425633}
   lightSound: {fileID: 1829425634}
   minTime: 0.1
   maxTime: 5
@@ -3193,7 +3195,7 @@ GameObject:
   m_Name: Door Knob
   m_TagString: Interactable
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
+  m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1836308893

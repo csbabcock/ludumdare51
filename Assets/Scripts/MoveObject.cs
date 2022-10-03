@@ -18,9 +18,9 @@ public class MoveObject : MonoBehaviour
     {
         if (moveObject)
         {
-            randomX = Random.Range(1f, 3f);
-            randomY = Random.Range(1f, 3f);
-            randomZ = Random.Range(1f, 3f);
+            randomX = Random.Range(1f, 5f);
+            randomY = Random.Range(1f, 5f);
+            randomZ = Random.Range(1f, 5f);
 
             rb[Random.Range(0,3)].AddForce(randomX,randomY,randomZ, ForceMode.Impulse);
             

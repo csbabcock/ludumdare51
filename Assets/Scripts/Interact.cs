@@ -10,7 +10,7 @@ public class Interact : MonoBehaviour
     public float MaxDistance = 10;
     public  Animator anim;
     public GameObject text;
-    private bool isOpen;
+    public bool isOpen;
       
     void Update()
     {
