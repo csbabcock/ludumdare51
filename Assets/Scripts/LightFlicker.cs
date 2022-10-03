@@ -5,7 +5,7 @@ using Random=UnityEngine.Random;
 
 public class LightFlicker : MonoBehaviour
 {
-    public Light light;
+    public Light lightType;
 
     public AudioSource lightSound;
 
@@ -35,7 +35,7 @@ public class LightFlicker : MonoBehaviour
 
         if (flickerTimer <= 0)
         {
-            light.enabled = !light.enabled;
+            lightType.enabled = !lightType.enabled;
             flickerTimer = Random.Range(minTime, maxTime);
             lightSound.Play();
         }

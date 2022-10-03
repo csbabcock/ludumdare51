@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c784c5fa-cf96-47cc-8741-e025d5ef9133" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ludumdare51/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ludumdare51/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EveryTenSeconds.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EveryTenSeconds.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FollowPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FollowPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FirstPersonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FirstPersonController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +80,7 @@
       <workItem from="1664628439105" duration="12756000" />
       <workItem from="1664653989235" duration="3167000" />
       <workItem from="1664658320220" duration="8848000" />
-      <workItem from="1664740299771" duration="1265000" />
+      <workItem from="1664740299771" duration="1876000" />
     </task>
     <servers />
   </component>
